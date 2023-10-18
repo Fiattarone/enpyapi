@@ -68,7 +68,10 @@ This should solely be used for my project RabbitHole, but be my guest as it's pu
 
 ## 📦 Dependencies
 
-List the main dependencies and libraries used in your project.
+-   mongoose
+-   node
+-   express
+-   yarn
 
 ## 🤝 Contributing
 
