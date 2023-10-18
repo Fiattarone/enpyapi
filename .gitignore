@@ -1,0 +1,41 @@
+# Node.js
+node_modules/
+
+# Logs
+logs/
+*.log
+
+# Dependency directories
+lib/
+vendor/
+bower_components/
+jspm_packages/
+elm-stuff/
+pids/
+tmp/
+*.pid
+*.seed
+*.pid.lock
+
+# IDE directories
+.idea/
+.vscode/
+.project
+.settings/
+.DS_Store
+
+# Environment
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+ehthumbs.db
+Thumbs.db
+
+# Optional: Yarn Integrity file
+.yarn-integrity
+
+# Optional: OS-specific files
+.DS_Store
