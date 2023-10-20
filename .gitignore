@@ -25,6 +25,7 @@ tmp/
 .DS_Store
 
 # Environment
+.env
 .env.local
 .env.development.local
 .env.test.local
