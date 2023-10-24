@@ -4,8 +4,14 @@ const express = require('express');
 const app = express();
 const routes = require('./routes/wordRoute');
 const mongoose = require('mongoose');
+const rateLimit = require('express-rate-limit');
 
 const PORT = process.env.PORT || 3000;
+
+const limiter = rateLimit({
+	windowMs: 60 * 60 * 1000, // 1 hour
+	max: 100, // limit each IP to 100 requests per windowMs
+});
 
 mongoose.connect(process.env.MONGO_URI, {
 	useNewUrlParser: true,
@@ -21,6 +27,7 @@ db.on('error', (error) => {
 db.once('open', () => {
 	console.log('Connected to MongoDB');
 
+	app.use(limiter);
 	app.use(routes);
 
 	app.get('/', (req, res) => {
