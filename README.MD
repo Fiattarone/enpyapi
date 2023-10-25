@@ -76,6 +76,7 @@ This should solely be used for my project RabbitHole, but be my guest as it's pu
 -   dotenv
 -   cross-env
 -   express-rate-limit
+-   crypto
 
 ## 🤝 Contributing
 
