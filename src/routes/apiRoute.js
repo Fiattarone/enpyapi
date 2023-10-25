@@ -13,7 +13,7 @@ router.get('/api/', async (req, res) => {
 		console.warn(newApiKey);
 
 		// Check to see if key already exists
-		let document = await apiKeyModel.findOne({ apiKey: newApiKey });
+		document = await apiKeyModel.findOne({ apiKey: newApiKey });
 
 		// If the key does not exist, insert it into the collection
 		if (!document) {
