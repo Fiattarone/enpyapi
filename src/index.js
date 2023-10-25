@@ -2,7 +2,8 @@ require('dotenv').config();
 
 const express = require('express');
 const app = express();
-const routes = require('./routes/wordRoute');
+const wordRoute = require('./routes/wordRoute');
+const apiRoute = require('./routes/apiRoute');
 const mongoose = require('mongoose');
 const rateLimit = require('express-rate-limit');
 
@@ -28,7 +29,8 @@ db.once('open', () => {
 	console.log('Connected to MongoDB');
 
 	app.use(limiter);
-	app.use(routes);
+	app.use(wordRoute);
+	app.use(apiRoute);
 
 	app.get('/', (req, res) => {
 		res.send('Hello World -- ENPY API here!');
