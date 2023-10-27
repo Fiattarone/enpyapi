@@ -10,6 +10,7 @@ Welcome to the ENcycloPYdia (ENPY) API!
 -   [🚀 Usage](#-usage)
     -   [Endpoints](#endpoints)
     -   [Example Requests](#example-requests)
+    -   [📝 Some Quick Notes](#📝-some-quick-notes)
 -   [⚙️ Configuration](#️-configuration)
 -   [📦 Dependencies](#-dependencies)
 -   [🤝 Contributing](#-contributing)
@@ -61,6 +62,11 @@ This should solely be used for my project RabbitHole, but be my guest as it's pu
 ### Example Requests
 
 --TBD
+
+### 📝 Some Quick Notes:
+
+-   Should probably rate limit the apikey endpoint, and make this rate limit probably 10 guesses/day
+-   Rotate apikeys annually
 
 ## ⚙️ Configuration
 
