@@ -35,6 +35,7 @@ db.on('error', (error) => {
 db.once('open', () => {
 	console.log('Connected to MongoDB');
 
+	app.use(express.json());
 	app.use((req, res, next) => {
 		// Check header for api key
 		const apiKey = req.headers['x-api-key'];
