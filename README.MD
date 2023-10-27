@@ -83,12 +83,23 @@ This example demonstrates how to query a word using the API:
 GET /word/apple
 ```
 
-This example demonstrates how to generate an ApiKey using the API:
+This example demonstrates how to generate an API key using the API:
 
 **Request**:
 
 ```http
-GET /api/
+POST /api/
+Content-Type: application/json
+```
+
+**Request Body**
+
+```
+{
+    "institutionName": "University of Fiattarone",
+    "contactEmail": "Fiattarone@me.com",
+    "issuedBy": "The Man Himself -- DTF"
+}
 ```
 
 ### 📝 Some Quick Notes:
