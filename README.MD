@@ -106,6 +106,7 @@ GET /api/
 -   mongodb
 -   node
 -   express
+-   express-validator
 -   yarn
 -   dotenv
 -   cross-env
