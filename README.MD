@@ -57,11 +57,39 @@ This should solely be used for my project RabbitHole, but be my guest as it's pu
 
 ### Endpoints
 
---TBD
+#### Query Word by API Endpoint
+
+This endpoint allows you to query for a word by its value.
+
+-   **URL**: `/word/:word`
+-   **HTTP Method**: GET
+
+#### Generate ApiKey Endpoint
+
+This endpoint allows you to generate a random 32 char ApiKey.
+
+-   **URL**: `/api/`
+-   **HTTP Method**: GET
 
 ### Example Requests
 
---TBD
+#### Query Word Example
+
+This example demonstrates how to query a word using the API:
+
+**Request**:
+
+```http
+GET /word/apple
+```
+
+This example demonstrates how to generate an ApiKey using the API:
+
+**Request**:
+
+```http
+GET /api/
+```
 
 ### 📝 Some Quick Notes:
 
@@ -92,3 +120,7 @@ This should solely be used for my project RabbitHole, but be my guest as it's pu
 ## 📝 License
 
 This project is licensed under the [MIT License] - see the [LICENSE.md](LICENSE.md) file for details.
+
+```
+
+```
