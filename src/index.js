@@ -36,12 +36,25 @@ db.once('open', () => {
 	console.log('Connected to MongoDB');
 
 	app.use(express.json());
-	app.use((req, res, next) => {
+	app.use(async (req, res, next) => {
 		// Check header for api key
 		const apiKey = req.headers['x-api-key'];
 
 		// If the request has a valid API key, allow it to bypass rate limiting
 		if (apiKey && isValidApiKey(apiKey)) {
+			try {
+				const apiKeyDocument = await apiKeyModel.findOne({ apiKey });
+
+				if (apiKeyDocument) {
+					// Increment the totalRequests count and update the lastUsed timestamp
+					apiKeyDocument.usageStats.totalRequests += 1;
+					apiKeyDocument.usageStats.lastUsed = new Date();
+					await apiKeyDocument.save();
+				}
+			} catch (error) {
+				console.error('Error updating usage stats:', error);
+			}
+
 			return next();
 		}
 
