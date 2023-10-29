@@ -124,6 +124,7 @@ Content-Type: application/json
 -   express-rate-limit
 -   crypto
 -   axios
+-   stripe
 
 ## 🤝 Contributing
 
