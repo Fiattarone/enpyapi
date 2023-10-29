@@ -12,7 +12,8 @@
 		"express-rate-limit": "^7.1.1",
 		"express-validator": "^7.0.1",
 		"mongodb": "^6.1.0",
-		"mongoose": "^7.6.3"
+		"mongoose": "^7.6.3",
+		"stripe": "^14.2.0"
 	},
 	"scripts": {
 		"start": "cross-env NODE_ENV=development node src/index.js"
