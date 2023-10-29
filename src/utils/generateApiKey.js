@@ -1,8 +1,8 @@
 const crypto = require('crypto');
 
 const generateApiKey = () => {
-	// Generate a random 32-character API key
-	const apiKey = crypto.randomBytes(16).toString('hex');
+	// Generate a random 64-character API key
+	const apiKey = crypto.randomBytes(32).toString('hex');
 	return apiKey;
 };
 
