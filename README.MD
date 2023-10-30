@@ -109,7 +109,45 @@ Content-Type: application/json
 
 ## ⚙️ Configuration
 
---TBD
+### SERVER:
+
+#### ufw:
+
+-   Using ufw to manage ports:
+-   -3000: Testing
+-   -22: SSH
+-   Commands:
+
+```bash
+sudo ufw allow XXXX/tcp
+```
+
+Enables port XXXX
+
+```bash
+sudo ufw enable && sudo ufw status
+```
+
+Enables ufw & shows open ports
+
+#### pm2:
+
+-   Using pm2 to run enpyapi in background:
+-   Commands:
+
+```bash
+pm2 start ~/enpyapi/src/index.js && pm2 monit
+```
+
+#### Moving files to server:
+
+-   For files not included in the git clone:
+
+```bash
+scp /path/to/local/file username@remote_host:/path/to/destination
+```
+
+Moves files from local machine to remote server
 
 ## 📦 Dependencies
 
