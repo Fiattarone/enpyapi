@@ -149,6 +149,12 @@ scp /path/to/local/file username@remote_host:/path/to/destination
 
 Moves files from local machine to remote server
 
+### CLIENT:
+
+#### OpenVPN:
+
+-   Reach out to me to get your OpenVPN client configuration. Quite simple. I'll email it over or something. Or maybe I'm a paranoid superstitious nerd that needs you to go to a specific location, then ask you to check under a rock for a USB that will self-detonate after one use. That being said, never contact me on a Friday the 13th. Or even a 13th. Don't even mention mirrors. Apple nerds, you see that shiny apple on the lid of your macbook? Better not have a scratch on it--that counts as a broken mirror. Unless you own a black cat. You see, if you own a black cat, two negatives = positive. Anybody who doesn't know their math obviously isn't quality enough to work on this project. So know your math.
+
 ## 📦 Dependencies
 
 -   mongoose
